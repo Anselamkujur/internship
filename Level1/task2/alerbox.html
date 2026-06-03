@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Greeting Alert</title>
+</head>
+<body>
+
+<button onclick="showGreeting()">Click Me</button>
+
+<script>
+function showGreeting() {
+    const hour = new Date().getHours();
+
+    if (hour < 12) {
+        alert("Good Morning!");
+    } else if (hour < 18) {
+        alert("Good Afternoon!");
+    } else {
+        alert("Good Evening!");
+    }
+}
+</script>
+
+</body>
+</html>
