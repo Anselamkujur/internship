@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        .gallery {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:active {
+            transform: scale(2);
+        }
+    </style>
+</head>
+<body>
+
+<h2 align="center">Image Gallery</h2>
+
+<div class="gallery">
+    <img src="https://picsum.photos/id/1015/300/200" alt="Image 1">
+    <img src="https://picsum.photos/id/1016/300/200" alt="Image 2">
+    <img src="https://picsum.photos/id/1018/300/200" alt="Image 3">
+</div>
+
+</body>
+</html>

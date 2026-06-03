@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Slideshow</title>
+
+    <style>
+        .slider {
+            width: 500px;
+            height: 300px;
+            overflow: hidden;
+            margin: 50px auto;
+            border: 2px solid #333;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%;
+            animation: slide 9s infinite;
+        }
+
+        .slides img {
+            width: 500px;
+            height: 300px;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+            33% {
+                transform: translateX(-500px);
+            }
+            66% {
+                transform: translateX(-1000px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Automatic Image Slideshow</h2>
+
+<div class="slider">
+    <div class="slides">
+        <img src="https://picsum.photos/id/1015/500/300" alt="Slide 1">
+        <img src="https://picsum.photos/id/1016/500/300" alt="Slide 2">
+        <img src="https://picsum.photos/id/1018/500/300" alt="Slide 3">
+    </div>
+</div>
+
+</body>
+</html>
